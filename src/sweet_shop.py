@@ -1,17 +1,15 @@
-# src/sweet_shop.py
-
 from src.sweet import Sweet
 
 class SweetShop:
     def __init__(self):
         self.inventory = {}
 
-    def add_sweet(self, sweet):
+    def add_sweet(self, sweet: Sweet):
         if sweet.id in self.inventory:
             raise ValueError("Sweet with this ID already exists.")
         self.inventory[sweet.id] = sweet
 
-    def delete_sweet(self, sweet_id):
+    def delete_sweet(self, sweet_id: int):
         if sweet_id not in self.inventory:
             raise ValueError("Sweet not found.")
         del self.inventory[sweet_id]
@@ -24,21 +22,21 @@ class SweetShop:
         if name:
             results = filter(lambda s: name.lower() in s.name.lower(), results)
         if category:
-            results = filter(lambda s: category.lower() == s.category.lower(), results)
+            results = filter(lambda s: category.lower() in s.category.lower(), results)
         if price_range:
-            min_price, max_price = price_range
-            results = filter(lambda s: min_price <= s.price <= max_price, results)
+            min_p, max_p = price_range
+            results = filter(lambda s: min_p <= s.price <= max_p, results)
         return list(results)
 
-    def purchase_sweet(self, sweet_id, quantity):
+    def purchase_sweet(self, sweet_id: int, quantity: int):
         if sweet_id not in self.inventory:
             raise ValueError("Sweet not found.")
         sweet = self.inventory[sweet_id]
         if sweet.quantity < quantity:
-            raise ValueError("Not enough stock.")
+            raise ValueError("Insufficient stock.")
         sweet.quantity -= quantity
 
-    def restock_sweet(self, sweet_id, quantity):
+    def restock_sweet(self, sweet_id: int, quantity: int):
         if sweet_id not in self.inventory:
             raise ValueError("Sweet not found.")
         self.inventory[sweet_id].quantity += quantity
