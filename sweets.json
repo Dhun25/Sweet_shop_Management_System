@@ -1,9 +1,37 @@
 [
     {
-        "id": "3",
-        "name": "Barfi",
-        "category": "Milk",
+        "id": "1",
+        "name": "Kaju Katli",
+        "category": "Nut-Based",
         "price": 50.0,
-        "quantity": 500
+        "quantity": 20
+    },
+    {
+        "id": "2",
+        "name": "Gajar Halwa",
+        "category": "Vegetable-Based",
+        "price": 30.0,
+        "quantity": 15
+    },
+    {
+        "id": "3",
+        "name": "Gulab Jamun",
+        "category": "Milk-Based",
+        "price": 10.0,
+        "quantity": 50
+    },
+    {
+        "id": "4",
+        "name": "Rasgulla",
+        "category": "Milk based",
+        "price": 20.0,
+        "quantity": 40
+    },
+    {
+        "id": "5",
+        "name": "Rabdi",
+        "category": "Milk based",
+        "price": 60.0,
+        "quantity": 100
     }
 ]
