@@ -18,11 +18,17 @@ A simple web application to manage the inventory of a sweet shop using **Python 
 ## 🛠️ Project Structure
 sweetshop/
 ├── App.py # Main Flask application
+
 ├── Sweet.py # Sweet model class
+
 ├── SweetShop.py # Handles business logic & data persistence
+
 ├── index.html # Frontend UI (in templates folder or public)
+
 ├── sweets.json # JSON file for data storage
+
 ├── testSweetShop.py # Basic unit tests
+
 └── README.md # Project documentation
 
 
