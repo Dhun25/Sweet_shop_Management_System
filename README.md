@@ -25,6 +25,9 @@ sweetshop/
 ├── testSweetShop.py # Basic unit tests
 └── README.md # Project documentation
 
+yaml
+Copy
+Edit
 
 ---
 
@@ -33,20 +36,51 @@ sweetshop/
 ### 🔧 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Dhun25/Sweet-shop-Management-System.git
+git clone https://github.com/yourusername/sweetshop.git
 cd sweetshop
-2. Create a Virtual Environment
-        python -m venv venv
-▶️ 3. Activate the Environment:venv\Scripts\activate
-4. Install Flask:pip install Flask
-▶️ 5. Run the App:python App.py
+🐍 2. Create a Virtual Environment
+bash
+Copy
+Edit
+python -m venv venv
+▶️ 3. Activate the Environment
+On Windows:
+
+bash
+Copy
+Edit
+venv\Scripts\activate
+On macOS/Linux:
+
+bash
+Copy
+Edit
+source venv/bin/activate
+📦 4. Install Flask
+bash
+Copy
+Edit
+pip install Flask
+▶️ 5. Run the App
+bash
+Copy
+Edit
+python App.py
 Then, open your browser and go to:
 http://127.0.0.1:5000
+
 🧪 Run Tests
+bash
+Copy
+Edit
 python testSweetShop.py
 You should see:
+
+css
+Copy
+Edit
 ✅ All tests passed!
-Data Storage
+📁 Data Storage
 The sweets data is stored in a file named sweets.json. It is automatically created/updated when you add, delete, purchase, or restock sweets.
 
 📌 Future Enhancements
