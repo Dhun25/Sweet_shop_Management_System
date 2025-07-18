@@ -41,7 +41,7 @@ sweetshop/
 ```bash
 git clone https://github.com/Dhun25/Sweet-shop-Management-System.git
 cd sweetshop
-2. Create a Virtual Environment
+#### 2. Create a Virtual Environment
         python -m venv venv
 ▶️ 3. Activate the Environment:venv\Scripts\activate
 4. Install Flask:pip install Flask
